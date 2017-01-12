@@ -149,8 +149,6 @@ function DataService(apiEndpoint) {
 
     self.fetchData = function(sightingsSince, predictionsUntil, coordinates, updateCallback) {
 
-        debugger;
-
         if (sightingsSince == 0){
             if (predictionsUntil == 0){
                 console.log("Nothing to show");
