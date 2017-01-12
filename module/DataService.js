@@ -65,7 +65,7 @@ function DataService(apiEndpoint) {
             var longitude = coordinates.longitude;
             var latitude = coordinates.latitude;
             var date = new Date();
-            var predictionsUntilDate = (new Date(new Date().getTime()-sightingsSince*1000))
+            var predictionsUntilDate = (new Date(new Date().getTime() + timestamp*1000));
 
             var xhr = new XMLHttpRequest();
             var url = apiEndpoint + 'api/pokemon/prediction/coordinates/' + longitude + ',' + latitude + '/ts/' + predictionsUntilDate.toUTCString();
